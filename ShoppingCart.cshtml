@@ -1,0 +1,28 @@
+﻿@page
+@using InternetAssignment.Models;
+@model InternetAssignment.Pages.ShoppingCartModel
+@{
+	ViewData["Title"] = "Shopping Cart";
+	Layout = "_Layout";
+}
+
+
+<section>
+@foreach (var item in Model.CartItems)
+{
+    <div>
+        <h4>@item.ProductId</h4>
+        <p>@item.Quantity</p>
+        <form asp-page-handler="Update" method="post">
+            <input type="hidden" name="itemId" value="@item.Id" />
+            <input type="number" name="quantity" value="@item.Quantity" />
+            <button type="submit">Update</button>
+        </form>
+        <form asp-page-handler="Delete" method="post">
+            <input type="hidden" name="itemId" value="@item.Id" />
+            <button type="submit">Delete</button>
+        </form>
+    </div>
+}
+
+</section>
