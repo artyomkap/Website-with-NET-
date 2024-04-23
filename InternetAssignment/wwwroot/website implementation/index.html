@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Graphic Dream</title>
+    <link rel="stylesheet" href="main-light.css" id="theme">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+<body>
+  <header>
+      
+    <nav class="mini_navbar">
+      <a>Dark-light mode:</a>
+      <label class="switch">
+      <input type="checkbox" id="SwitchMode">
+        <span class="slider"></span>
+      </label>
+      <a onclick= "changeSizeByBtn(20);" class="fontSizebtn" id="fontSizebtn">A+</a>
+      <a onclick= "changeSizeByBtn(15);" class="fontSizebtn" id="fontSizebtn">Reset</a>
+      <a onclick= "changeSizeByBtn(12);" class="fontSizebtn" id="fontSizebtn">A-</a>
+  </nav>    
+    <div class="header_flex">
+      <div class="header__logo">
+        <a href="../website implementation/index.html" class="header_link">Graphic Dream</a>
+      </div>
+      <nav class="top_navigation" id="top_nav_bar">
+        <div class="topnav" id="myTopnav">
+          <a href="../website implementation/index.html" id="nav_font">Home</a>
+          <a href="../website implementation/catalog.html" id="nav_font">Catalog</a>
+          <a href="../website implementation/About Us.html" id="nav_font">About Us</a>
+          <a href="../website implementation/contact us.html" id="nav_font">Contact Us</a>
+          <a href="../website implementation/login.html" id="nav_font">Login</a>
+          <a href="../website implementation/registration.html" id="nav_font">Registration</a>         
+          <a href="#" id="menu" class="icon">&#9776;</a>
+        </div>
+      </nav>
+    </div>      
+  </header>
+
+  <main>
+    <div class="welcome">
+      <h1>Upgrade your PC in one click</h1>      
+      <p>On our website you can order the graphic cards.</p>
+      <div class="order_button_block">
+      <a class="order_button" href="../website implementation/catalog.html">Order Now</a>
+      </div>         
+    </div>
+    <div class="welcome__img_block">
+      <img  class="welcome_img" src="../images for design/Ampere-3090_3QTR_Back_Left-Custom.png">
+    </div>    
+  </main>
+  <section>
+    <div class="companies_block">
+      <p>Companies we work with:</p>
+      <div class="svg_1">
+      <svg xmlns="http://www.w3.org/2000/svg" class="nvidia_logo" viewBox="0 0 946.4 179.7"><path d="M578.2 34v118h33.3V34zm-262-.2v118.1h33.6V60.2l26.2.1c8.6 0 14.6 2.1 18.7 6.5 5.3 5.6 7.4 14.7 7.4 31.2v53.9h32.6V86.7c0-46.6-29.7-52.9-58.7-52.9zm315.7.2v118h54c28.8 0 38.2-4.8 48.3-15.5 7.2-7.5 11.8-24.1 11.8-42.2 0-16.6-3.9-31.4-10.8-40.6C723 37.2 705.2 34 678.6 34zm33 25.6h14.3c20.8 0 34.2 9.3 34.2 33.5s-13.4 33.6-34.2 33.6h-14.3zM530.2 34l-27.8 93.5L475.8 34h-36l38 118h48l38.4-118zm231.4 118h33.3V34h-33.3zM855 34l-46.5 117.9h32.8l7.4-20.9h55l7 20.8h35.7L899.5 34zm21.6 21.5 20.2 55.2h-41z"/><path d="M101.3 53.6V37.4c1.6-.1 3.2-.2 4.8-.2 44.4-1.4 73.5 38.2 73.5 38.2S148.2 119 114.5 119c-4.5 0-8.9-.7-13.1-2.1V67.7c17.3 2.1 20.8 9.7 31.1 27l23.1-19.4s-16.9-22.1-45.3-22.1c-3-.1-6 .1-9 .4m0-53.6v24.2l4.8-.3c61.7-2.1 102 50.6 102 50.6s-46.2 56.2-94.3 56.2c-4.2 0-8.3-.4-12.4-1.1v15c3.4.4 6.9.7 10.3.7 44.8 0 77.2-22.9 108.6-49.9 5.2 4.2 26.5 14.3 30.9 18.7-29.8 25-99.3 45.1-138.7 45.1-3.8 0-7.4-.2-11-.6v21.1h170.2V0H101.3zm0 116.9v12.8c-41.4-7.4-52.9-50.5-52.9-50.5s19.9-22 52.9-25.6v14h-.1c-17.3-2.1-30.9 14.1-30.9 14.1s7.7 27.3 31 35.2M27.8 77.4s24.5-36.2 73.6-40V24.2C47 28.6 0 74.6 0 74.6s26.6 77 101.3 84v-14c-54.8-6.8-73.5-67.2-73.5-67.2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="amd_logo" viewBox="0 0 800 190.802"><path d="M187.888 178.122H143.52l-13.573-32.738H56.003l-12.366 32.738H0L66.667 12.776h47.761zM91.155 52.286 66.912 116.53h50.913zm257.901-39.51h35.88v165.346h-41.219V74.842l-44.608 51.877h-6.301l-44.605-51.877V178.12h-41.219V12.776h35.88l53.092 61.336zm140.319 0c60.364 0 91.391 37.573 91.391 82.909 0 47.517-30.058 82.437-96 82.437h-68.369V12.776zm-31.762 135.041h26.906c41.457 0 53.823-28.129 53.823-52.377 0-28.368-15.276-52.363-54.308-52.363h-26.422v104.74zm205.156-95.836L610.797 0H800v189.21l-51.972-51.975V51.981zm-.061 10.416L609.2 115.903v74.899h74.889l53.505-53.506h-74.886z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="msi_logo" xml:space="preserve" viewBox="0 0 2136.8 537"><path d="M1942.8 535.6 2089 132.1s-109.6 0-219.3 22.5l-137.8 381h210.9zm-25.3-511.7-28.1 77.3c109.6-22.5 219.3-22.5 219.3-22.5l28.1-77.3s-109.7 0-219.3 22.5m-762 416.1c66.1 12.7 133.5 18.3 202.4 18.3 71.7 0 122.3-15.5 127.9-64.7 2.8-22.5-19.7-39.4-59-61.9-45-25.3-84.3-38-123.7-64.7-39.4-26.7-56.2-67.5-43.6-112.5 15.5-52 52-81.5 106.8-109.6 64.7-32.3 115.3-45 240.4-45 78.7 0 154.6 7 229.1 22.5l-26.7 73.1c-66.1-12.7-133.5-18.3-202.4-18.3-71.7 0-122.3 15.5-127.9 64.7-2.8 22.5 19.7 39.4 59 61.9 45 25.3 84.3 38 123.7 64.7s56.2 67.5 43.6 112.5c-15.5 52-52 81.5-106.8 109.6-64.7 32.3-115.3 45-240.4 45-78.7 0-154.6-7-229.1-22.5l26.7-73.1zm-317.7 95.6 122.3-336c40.8-112.5-108.2-71.7-142-45-26.7 19.7-74.5 66.1-91.4 115.3l-97 267.1H418.9l122.3-337.4c40.8-112.5-108.2-71.7-142-45-26.7 19.7-74.5 66.1-91.4 115.3l-97 267.1H0L194 1.4c67.5 0 104 15.5 133.5 45 11.2 11.2 18.3 25.3 22.5 40.8 39.4-23.9 74.5-42.2 98.4-50.6C492 19.7 546.8 1.4 614.3 1.4s104 15.5 133.5 45c11.2 11.2 18.3 25.3 22.5 40.8 39.4-23.9 74.5-42.2 98.4-50.6 43.6-16.9 98.4-35.1 165.9-35.1s104 15.5 133.5 45c30.9 29.5 29.5 84.3 18.3 115.3l-137.8 373.9H837.8z"/></svg>
+      </div>
+    </div>    
+  </section>
+  <section class="why_choose_block">
+    <div>
+      <p>Why choose us?</p>
+    </div>
+    <div class="three_groups_block">
+    <div class="original_products">
+      <div class="rectangle">
+        <img src="../images for design/graphic-card.png" class="or_products_img">
+      </div>
+      <h1>Original products</h1>
+      <p>Our company has only original graphic cards with the best quality</p>
+    </div>
+    <div class="original_products">
+      <div class="rectangle2">
+        <img src="../images for design/guarantee-certificate.png" class="or_products_img">
+      </div>
+      <h1>100% Guarantee</h1>
+      <p>Our company provides 1 year warranty for all products</p>
+    </div>
+    <div class="original_products">
+      <div class="rectangle3">
+        <img src="../images for design/fast-delivery.png" class="or_products_img">
+      </div>
+      <h1>Fast delivery</h1>
+      <p>Our company deliver all products  in the fastest way.</p>
+    </div>
+    </div> 
+  </section>
+
+  <section class="popular_products">
+    <h1 class="popular_prod_h1">The most popular products:</h1>
+    <div class="products_card_block">
+      <div class="product">
+        <img src="../images for design/Ampere-3090_3QTR_Back_Left-Custom.png" class="card_img1">
+        <h1>NVIDIA RTX 3090</h1>
+        <p>The most powerful decision
+          at this moment</p>
+        <div class="price_block">£1099</div>
+      </div>
+      <div class="product2">
+        <img src="../images for design/msi rtx 3080 ventus.png" class="card_img2">
+        <h1>MSI RTX 3080</h1>
+        <p>Very powerful and cheap
+          at this moment</p>
+        <div class="price_block">£549</div>
+      </div>
+      <div class="product2">
+        <img src="../images for design/palit geforce rtx 3060 TI.png" class="card_img3">
+        <h1>PALIT RTX 3060 TI</h1>
+        <p>Good choice for small budget</p>
+        <div class="price_block">£399</div>
+      </div>
+    </div>
+    <div class="more_products_block">
+      <a href="../website implementation/catalog.html" class="see_more_products_button">See more products</a>
+    </div>
+
+  </section>
+  
+  <section class="question_section">    
+    <div class="input_block">
+      <h1 class="question_h1">Have a question? Ask here!</h1>
+      <form id="form">
+      <div class="first_row">
+        <input class="input_name" placeholder="Your Name" id="name1">
+        <input class="input_email" placeholder="Your E-mail" id="email">
+        <div class="error"></div>
+      </div>   
+      <div class="second_row">
+        <input class="input_phone" placeholder="Phone Number" id="phone">
+        <div class="error"></div>
+      </div>
+      <div class="third_row">
+        <input class="input_question" placeholder="Type in your question">
+        <div class="error"></div>
+        <button type="submit" class="arrow_button"><svg  class="arrow_svg" fill="#ffffff"  viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><path d="M 27.9883 50.1367 C 29.2071 50.1367 30.0976 49.2930 30.0976 48.0742 L 30.0976 17.2071 L 29.9102 12.2149 L 36.9180 19.9024 L 42.2617 25.1524 C 42.6367 25.5273 43.1992 25.7149 43.7383 25.7149 C 44.9102 25.7149 45.7773 24.8242 45.7773 23.6758 C 45.7773 23.1133 45.5664 22.6211 45.1211 22.1524 L 29.5586 6.5664 C 29.1133 6.0976 28.5742 5.8633 27.9883 5.8633 C 27.4258 5.8633 26.8867 6.0976 26.4414 6.5664 L 10.8789 22.1524 C 10.4336 22.6211 10.2227 23.1133 10.2227 23.6758 C 10.2227 24.8242 11.0898 25.7149 12.2383 25.7149 C 12.8008 25.7149 13.3633 25.5273 13.7383 25.1524 L 19.0586 19.9024 L 26.0898 12.1914 L 25.9024 17.2071 L 25.9024 48.0742 C 25.9024 49.2930 26.7695 50.1367 27.9883 50.1367 Z"/></svg></button>
+      </div>
+      </form>
+    </div>
+    <div class="question_img_block">
+      <img src="../images for design/Ampere-3090_3QTR_Back_Left-Custom123.png" class="question_img">
+    </div>    
+  </section>
+  <footer>
+    <div class="footer_div">
+    <h1>Graphic Dream</h1>
+    <p>2022 @Privacy Policy</p>
+    <p>Terms and Conditions</p>
+    <input class="footer_input" placeholder="E-mail Address">
+    <button class="footer_button">Send</button>
+    </div>
+  </footer>
+
+
+
+
+    
+</body>
+
+</html>

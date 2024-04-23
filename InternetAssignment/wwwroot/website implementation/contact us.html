@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Graphic Dream</title>
+    <link rel="stylesheet" href="main-light.css" id="theme">
+    <!-- <script src="/website implementation/jquery-3.6.3.js"></script> -->
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+<body>
+  <header>
+      
+    <nav class="mini_navbar">
+      <a>Dark-light mode:</a>
+      <label class="switch">
+      <input type="checkbox" id="SwitchMode">
+        <span class="slider"></span>
+      </label>
+      <a onclick= "changeSizeByBtn(20);" class="fontSizebtn">A+</a>
+      <a onclick= "changeSizeByBtn(15);" class="fontSizebtn">Reset</a>
+      <a onclick= "changeSizeByBtn(12);" class="fontSizebtn">A-</a>
+  </nav>    
+    <div class="header_flex">
+      <div class="header__logo">
+        <a href="../website implementation/index.html" class="header_link">Graphic Dream</a>
+      </div>
+      <nav class="top_navigation" id="top_nav_bar">
+        <div class="topnav" id="myTopnav">
+          <a href="../website implementation/index.html" id="nav_font">Home</a>
+          <a href="../website implementation/catalog.html" id="nav_font">Catalog</a>
+          <a href="../website implementation/About Us.html" id="nav_font">About Us</a>
+          <a href="../website implementation/contact us.html" id="nav_font">Contact Us</a>
+          <a href="../website implementation/login.html" id="nav_font">Login</a>
+          <a href="../website implementation/registration.html" id="nav_font">Registration</a>         
+          <a href="#" id="menu" class="icon">&#9776;</a>
+        </div>
+      </nav>
+    </div>      
+  </header>
+
+  <section class="contact_us_section">
+    <div class="contact_us_block">
+    <h1>Our phone number:</h1>
+    <p> +447878498*2*</p>
+    <h1>Our Email</h1>
+    <p> graphic_dream@gmail.com</p>
+    <h1>Our address:</h1>
+    <p>Clifton Campus, NTU, Clifton Ln, Nottingham NG11 8PT</p>
+    </div>    
+    <iframe class="map_block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927.6579783003964!2d-1.1837788019746374!3d52.91158371315689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879c3bdb56fd1df%3A0x70bb9cc0c5ab1157!2sNew%20Hall!5e0!3m2!1sru!2suk!4v1673219597779!5m2!1sru!2suk" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+  </section>
+
+  <footer>
+    <div class="footer_div">
+    <h1>Graphic Dream</h1>
+    <p>2022 @Privacy Policy</p>
+    <p>Terms and Conditions</p>
+    <input class="footer_input" placeholder="E-mail Address">
+    <button class="footer_button">Send</button>
+    </div>
+  </footer>

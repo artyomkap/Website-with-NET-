@@ -1,0 +1,49 @@
+﻿@page
+@using InternetAssignment.Models
+@model InternetAssignment.Pages.AdminProductsModel
+
+@{
+	Layout = "_Layout";
+}
+
+
+<form method="post">
+	<div>
+	<label>Id for the Product</label>
+	<input asp-for="@Model.Products.ProductId"/>
+	</div>
+	<div>
+	<label>Name of the Product</label>
+	<input asp-for="@Model.Products.ProductName"/>
+	</div>
+	<div>
+	<label>First description of the Product</label>
+	<input asp-for="@Model.Products.ProductDescription"/>
+	</div>
+	<div>
+	<label>Type of Cooling System </label>
+	<input asp-for="@Model.Products.ProductCoolingSystem"/>
+	</div>
+	<div>
+	<label>Boost Clock Speed, type in the value and GHz</label>
+	<input asp-for="@Model.Products.ProductClockSpeed"/>
+	</div>
+	<div>
+	<label>GPU Memory Size, type in the value and GB</label>
+	<input asp-for="@Model.Products.ProductGPU"/>
+	</div>
+	<div>
+	<label>Name of the image</label>
+	<input asp-for="@Model.Products.ProductImage"/>
+	</div>
+	<div>
+	<label>Price for the product, just type in the number</label>
+	<input asp-for="@Model.Products.ProductPrice"/>
+	</div>
+	<div>
+	<label>Link for the Product Video</label>
+	<input asp-for="@Model.Products.ProductVideo"/>
+	</div>
+
+	<button type="submit" value="Save">Save the Product</button>
+</form>

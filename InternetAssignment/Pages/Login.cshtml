@@ -1,0 +1,35 @@
+﻿@page
+@model InternetAssignment.Pages.LoginModel
+@{
+    ViewData["Title"] = "Home page";
+    Layout = "_Layout";
+}
+
+ <section class="registration_section">
+    <form class="registration_form">
+      <button class="form_button_login1">Login</button>
+      <button class="form_button_registration1">Registration</button>
+
+            
+      <div class="form_group">
+        <input id="email" class="form_input" placeholder="E-mail Address">
+        <div class="error"></div>           
+      </div>
+      <div class="form_group">
+        <input id="password" class="form_input" type="password" placeholder="Password">
+        <div class="error"></div>          
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="checkbox__input" id="checkbox_1">
+        <label class="checkbox__label" for="checkbox_1">Keep always logged</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="checkbox__input" id="checkbox_2">
+        <label class="checkbox__label" for="checkbox_2">Remember password</label>
+      </div>
+
+
+      <button type="submit" class="registration_button">Login</button>
+
+    </form>
+  </section>

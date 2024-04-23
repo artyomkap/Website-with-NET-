@@ -1,0 +1,60 @@
+﻿@page
+@using InternetAssignment.Models;
+@model InternetAssignment.Pages.ShoppingCartModel
+@{
+	ViewData["Title"] = "Shopping Cart";
+	Layout = "_Layout";
+}
+
+
+<section class="shoppingcart_section">
+<table>
+    <thead>
+        <tr>
+            <th class="shopping_cart_font">Product Name</th>
+            <th class="shopping_cart_font">Price</th>
+            <th class="shopping_cart_font">Quantity</th>           
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.ShoppingCartItems == null)
+        {
+            <p>CartItems is null</p>
+        }
+        else if (Model.ShoppingCartItems.Count == 0)
+        {
+            <p>Cart is empty</p>
+        }
+        else
+        {
+        @foreach (var item in @Model.ShoppingCartItems)
+        {
+            <tr>
+                <td class="shop_cart_font2">@item.Product.ProductName</td>
+                <td class="shop_cart_font2">£@item.Product.ProductPrice</td>
+                <td class="shop_cart_font2">@item.Quantity</td>                
+                <td>
+                    <form method="post" asp-page-handler="updateCart">
+                        <input type="hidden" name="cartItemId1" value="@item.Id" />
+                        <input class="input_quantity_cart" type="number" name="quantity" value="@item.Quantity" />
+                        <button class="shopping_cart_button" type="submit">Update</button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" asp-page-handler="RemoveFromCart">
+                        <input type="hidden" name="cartItemId1" value="@item.Id" />
+                        <button class="shopping_cart_button" type="submit">Remove</button>
+                    </form>
+                </td>
+            </tr>
+        }
+
+            <td class="total_price"> The Total Price:    £@Model.CartTotal</td>
+        }
+    </tbody>
+    <a class="checkout" href="#"> Checkout</a>
+</table>
+
+
+
+</section>

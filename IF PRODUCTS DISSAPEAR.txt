@@ -1,0 +1,23 @@
+IN CASE IF ALL PRODUCTS DELETES FROM DATABASE: EXECUTE THE FOLOWING CODE BELOW TO ADD ALL NECESSARY PRODUCTS FOR TEST!!!
+
+
+
+
+
+
+INSERT INTO "main"."Products" ("ProductId", "ProductName", "ProductDescription", "ProductCoolingSystem", "ProductClockSpeed", "ProductGPU", "ProductImage", "ProductPrice", "ProductVideo") VALUES ('1', 'NVIDIA RTX 3090 TI', 'Very powerful decision at this moment', 'Fan', '1.70 GHz', '24GB', 'nvidia-geforce-rtx-3090-ti.png', '1149', 'https://www.youtube.com/embed/XUED51mlpQk');
+INSERT INTO "main"."Products" ("ProductId", "ProductName", "ProductDescription", "ProductCoolingSystem", "ProductClockSpeed", "ProductGPU", "ProductImage", "ProductPrice", "ProductVideo") VALUES ('2', 'MSI NVIDIA RTX 3080', 'Very powerful and cheap, good choice', 'Fan', '1.71 GHz', '10 GB', 'msi rtx 3080 ventus.png', '549', 'https://www.youtube.com/embed/QWP9-4IamN4');
+INSERT INTO "main"."Products" ("ProductId", "ProductName", "ProductDescription", "ProductCoolingSystem", "ProductClockSpeed", "ProductGPU", "ProductImage", "ProductPrice", "ProductVideo") VALUES ('3', 'PALIT RTX 3060 TI', 'Good choice for small budget', 'Fan', '1.66 GHz', '8 GB', 'palit geforce rtx 3060 TI.png', '399', 'https://www.youtube.com/embed/NAdnLSI8c1E');
+INSERT INTO "main"."Products" ("ProductId", "ProductName", "ProductDescription", "ProductCoolingSystem", "ProductClockSpeed", "ProductGPU", "ProductImage", "ProductPrice", "ProductVideo") VALUES ('4', 'NVIDIA RTX 3070 TI', 'Very powerful and cheap, good choice', 'Fan', '1.73 GHz', '8 GB', 'nvidia-geforce-rtx-3070.png', '450', 'https://www.youtube.com/embed/NAdnLSI8c1E');
+INSERT INTO "main"."Products" ("ProductId", "ProductName", "ProductDescription", "ProductCoolingSystem", "ProductClockSpeed", "ProductGPU", "ProductImage", "ProductPrice", "ProductVideo") VALUES ('5', 'NVIDIA RTX 3070 TI', 'Very powerful and cheap, good choice', 'Fan', '1.77 GHz', '8 GB', '3070-ti-back-300x198.png', '499', 'https://www.youtube.com/embed/NAdnLSI8c1E');
+INSERT INTO "main"."Products" ("ProductId", "ProductName", "ProductDescription", "ProductCoolingSystem", "ProductClockSpeed", "ProductGPU", "ProductImage", "ProductPrice", "ProductVideo") VALUES ('6', 'NVIDIA RTX 4090', 'The most powerful decision at this moment', 'Fan', '2.52 GHz', '24 GB', 'GeForce-RTX4090-Back.png', '1299', 'https://www.youtube.com/embed/NFdUYnqFpQE');
+
+
+
+
+1	NVIDIA RTX 3090 TI	Very powerful decision at this moment	Fan	1.70 GHz	24GB	nvidia-geforce-rtx-3090-ti.png	1149	https://www.youtube.com/embed/XUED51mlpQk
+2	MSI NVIDIA RTX 3080	Very powerful and cheap, good choice	Fan	1.71 GHz	10 GB	msi rtx 3080 ventus.png	549	https://www.youtube.com/embed/QWP9-4IamN4
+3	PALIT RTX 3060 TI	Good choice for small budget	Fan	1.66 GHz	8 GB	palit geforce rtx 3060 TI.png	399	https://www.youtube.com/embed/NAdnLSI8c1E
+4	NVIDIA RTX 3070 TI	Very powerful and cheap, good choice	Fan	1.73 GHz	8 GB	nvidia-geforce-rtx-3070.png	450	https://www.youtube.com/embed/NAdnLSI8c1E
+5	NVIDIA RTX 3070 TI	Very powerful and cheap, good choice	Fan	1.77 GHz	8 GB	3070-ti-back-300x198.png	499	https://www.youtube.com/embed/NAdnLSI8c1E
+6	NVIDIA RTX 4090	The most powerful decision at this moment	Fan	2.52 GHz	24 GB	GeForce-RTX4090-Back.png	1299	https://www.youtube.com/embed/NFdUYnqFpQE

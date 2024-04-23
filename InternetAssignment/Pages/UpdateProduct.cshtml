@@ -1,0 +1,21 @@
+﻿@page
+@using InternetAssignment.Models
+@model InternetAssignment.Pages.UpdateProductModel
+@{
+	Layout = "_Layout";
+}
+
+<form method="post">
+
+ <input type="text" asp-for="@Model.Products.ProductId" readonly/>
+ <input type="text" asp-for="@Model.Products.ProductName" />
+ <input type="text" asp-for="@Model.Products.ProductDescription"/>
+ <input type="text" asp-for="@Model.Products.ProductCoolingSystem"/>
+ <input type="text" asp-for="@Model.Products.ProductClockSpeed"/>
+ <input type="text" asp-for="@Model.Products.ProductGPU"/>
+ <input type="text" asp-for="@Model.Products.ProductImage"/>
+ <input type="text" asp-for="@Model.Products.ProductPrice" />
+ <input type="text" asp-for="@Model.Products.ProductVideo"/>
+
+ <input type="submit" value="Save" />
+</form>

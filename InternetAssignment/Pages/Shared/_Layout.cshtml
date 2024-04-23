@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Graphic Dream</title>
+    <link rel="stylesheet" href="~/website implementation/main-dark.css" id="theme">
+    <script src="~/website implementation/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+<body>
+  <header>
+      
+    <nav class="mini_navbar">
+      <a>Dark-light mode:</a>
+      <label class="switch">
+      <input type="checkbox" id="SwitchMode">
+        <span class="slider"></span>
+      </label>
+      <a onclick= "changeSizeByBtn(20);" class="fontSizebtn" id="fontSizebtn">A+</a>
+      <a onclick= "changeSizeByBtn(15);" class="fontSizebtn" id="fontSizebtn">Reset</a>
+      <a onclick= "changeSizeByBtn(12);" class="fontSizebtn" id="fontSizebtn">A-</a>
+  </nav>    
+    <div class="header_flex">
+      <div class="header__logo">
+        <a asp-page="Index" class="header_link">Graphic Dream</a>
+      </div>
+      <nav class="top_navigation" id="top_nav_bar">
+        <div class="topnav" id="myTopnav">
+          <a asp-page="Index" id="nav_font">Home</a>
+          <a asp-page="Products" id="nav_font">Catalog</a>
+          <a asp-page="AboutUs" id="nav_font">About Us</a>
+          <a asp-page="ContactUs" id="nav_font">Contact Us</a>
+          <partial name="_LoginPartial" />      
+          <a href="#" id="menu" class="icon">&#9776;</a>
+        </div>
+      </nav>
+      
+    </div>      
+  </header>
+  <section>
+      @RenderBody()
+  </section>
+  
+
+  <footer>
+    <div class="footer_div">
+    <h1>Graphic Dream</h1>
+    <p>2022 Privacy Policy</p>
+    <p>Terms and Conditions</p>
+    <input class="footer_input" placeholder="E-mail Address">
+    <button class="footer_button">Send</button>
+    </div>
+  </footer>
+
+
+
+
+    
+</body>
+
+</html>

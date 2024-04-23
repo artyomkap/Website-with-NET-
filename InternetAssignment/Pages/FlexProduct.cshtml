@@ -1,0 +1,35 @@
+﻿@page
+@model InternetAssignment.Pages.FlexProductModel
+@{
+    ViewData["Title"] = "Home page";
+    Layout = "_Layout";
+}
+
+<section class="product_page_section">
+    <div class="left_column3060TI">
+      <button class="zoom_button" onclick="Zoom()">Zoom</button>
+
+    <img src="../images for design/@Model.Products.ProductImage" onclick="makeSmall()" id="img_gc">
+    </div>
+    <div class="right_column">
+      <h1>@Model.Products.ProductName</h1>
+      <h2>Description:</h2>  
+      <ul>
+        <li>Cooling System: @Model.Products.ProductCoolingSystem</li>
+        <li>Boost Clock Speed: @Model.Products.ProductClockSpeed</li>
+        <li>GPU Memory Size: @Model.Products.ProductGPU</li>
+      </ul>
+      <div class="product_price">£@Model.Products.ProductPrice</div>
+      <form asp-page-handler="AddToCartAsync" method="post">
+          <input type="hidden" name="productId" value="@Model.Products.ProductId" />
+          <div class="product_input_quantity">
+              <input class="input_quantity_large"  type="number" name="quantity" value="1" />
+              <button  type="submit" class="cart_button">Add to Cart</button>
+          </div>
+      </form>
+    </div>
+    <div class="third_column">
+      <iframe class="product_video" width="500" height="281" src="@Model.Products.ProductVideo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+  </section>

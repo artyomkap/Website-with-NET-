@@ -1,0 +1,8 @@
+C:\Users\Артем\Desktop\InternetAssignmet\InternetAssignmet\obj\Debug\net6.0\InternetAssignmet.csproj.AssemblyReference.cache
+C:\Users\Артем\Desktop\InternetAssignmet\InternetAssignmet\obj\Debug\net6.0\InternetAssignmet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Артем\Desktop\InternetAssignmet\InternetAssignmet\obj\Debug\net6.0\InternetAssignmet.AssemblyInfoInputs.cache
+C:\Users\Артем\Desktop\InternetAssignmet\InternetAssignmet\obj\Debug\net6.0\InternetAssignmet.AssemblyInfo.cs
+C:\Users\Артем\Desktop\InternetAssignmet\InternetAssignmet\obj\Debug\net6.0\InternetAssignmet.csproj.CoreCompileInputs.cache
+C:\Users\Артем\Desktop\InternetAssignmet\InternetAssignmet\obj\Debug\net6.0\InternetAssignmet.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Артем\Desktop\InternetAssignmet\InternetAssignmet\obj\Debug\net6.0\InternetAssignmet.RazorAssemblyInfo.cache
+C:\Users\Артем\Desktop\InternetAssignmet\InternetAssignmet\obj\Debug\net6.0\InternetAssignmet.RazorAssemblyInfo.cs

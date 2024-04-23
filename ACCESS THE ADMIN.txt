@@ -1,0 +1,3 @@
+If you want to be registered as an ADMIN:
+You have to fill the whole Register Form, then CLICK on the "Make me an Admin" and TYPE IN THE PASSWORD: "Admin123". Then submit the form.
+Now you are registered as an Admin, you can also login by the email you used while registered.

@@ -1,0 +1,33 @@
+﻿@page
+@model InternetAssignment.Pages.RegistrationModel
+@{
+	ViewData["Title"] = "Home page";
+    Layout = "_Layout";
+}
+
+<div>
+    <a asp-page="CreateRole"></a>
+</div>
+
+ <section class="registration_section">
+    <form id="form" class="registration_form" method="post">
+      <button class="form_button_login">Login</button>
+      <button class="form_button_registration">Registration</button>
+
+      <div class="form_group">
+        <input id="name1" class="form_input" placeholder="Fisrt Name" name="FirstName">               
+      </div>
+      <div class="form_group">
+        <input id="name2" class="form_input" placeholder="Last Name" name="LastName">               
+      </div>
+      <div class="form_group">
+        <input id="email" class="form_input" placeholder="E-mail Address" name="Email">                          
+      </div>
+      <div class="form_group">
+        <input id="password" class="form_input" placeholder="Password" type="password" name="Password">                            
+      </div>   
+
+      <button type="submit" class="registration_button">Register</button>
+
+    </form>
+  </section>
